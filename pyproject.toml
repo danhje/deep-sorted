@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "deep-sorted"
+version = "0.0.1"
+description = "Sorting of nested dicts and lists"
+readme = "README.md"
+repository = "https://github.com/danhje/deep-sorted"
+homepage = "https://github.com/danhje/deep-sorted"
+authors = ["Daniel Hjertholm <daniel.hjertholm@icloud.com>"]
+license = "MIT"
+keywords = ["sort", "sorted", "nested", "recursive", "deep", "dict", "list"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Natural Language :: English"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7, <=3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pre-commit = "^2.16.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,6 @@
+# To validate:
+#   cat codecov.yml | curl --data-binary @- https://codecov.io/validate
+
+codecov:
+    max_report_age: off
+    disable_default_path_fixes: false
