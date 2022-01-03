@@ -26,3 +26,24 @@ def test_deep_sorted_nested_dicts():
 def test_deep_sorted_nested_tuples():
     result = deep_sorted(((3, 2, 1), (7, 8, 9), (4, 5, 6)))
     assert result == ((1, 2, 3), (4, 5, 6), (7, 8, 9))
+
+
+def test_deep_sorted_list_mixed_type():
+    class A:
+        pass
+
+    result = deep_sorted([3, "a", A, 2, True, False])
+    assert result == [False, True, 2, 3, A, "a"]
+
+
+def test_deep_sorted_dict_mixed_type():
+    class A:
+        pass
+
+    result = deep_sorted({"a": ..., 1: ..., False: ..., A: ...})
+    assert result == {
+        False: ...,
+        1: ...,
+        A: ...,
+        "a": ...,
+    }
