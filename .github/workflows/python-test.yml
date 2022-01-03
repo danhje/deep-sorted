@@ -35,7 +35,7 @@ jobs:
         poetry run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        poetry run pytest --cov-report=xml --cov=pdrepr
+        poetry run pytest --cov-report=xml --cov=deep_sorted
     - name: Upload coverage report
       if: success()
       run: |
