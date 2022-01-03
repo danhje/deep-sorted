@@ -4,7 +4,6 @@ from itertools import permutations
 from typing import TypeVar
 
 from deep_sorted import deep_sorted
-from tests.conftest import ordered_structs
 
 T = TypeVar("T")
 random.seed(42)
