@@ -7,9 +7,9 @@ T = TypeVar("T")
 def _comp(ele):
     # noinspection PyBroadException
     try:
-        return 0, int(ele), ""
+        return 0, int(ele), str(type(ele)), id(ele)
     except BaseException:
-        return 1, str(ele), ""
+        return 1, str(ele), str(type(ele)), id(ele)
 
 
 def deep_sorted(obj: T) -> T:
