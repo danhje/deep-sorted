@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "deep-sorted"
-version = "0.0.1"
+version = "0.0.2"
 description = "Sorting of nested dicts and lists"
 readme = "README.md"
 repository = "https://github.com/danhje/deep-sorted"
